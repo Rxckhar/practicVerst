@@ -10,11 +10,11 @@
 }
 .container{
 
-    max-width: 1440px;
-    /*  */
+    /* max-width: 1440px;
+    
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     
 }
 .header{
@@ -26,8 +26,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: auto;
+    max-width: 1440px;
     margin-right: auto;
-    width: 76%;
+    width: 58%;
     
 }
 .header-container{
@@ -102,7 +103,8 @@
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    width: 77%;
+    max-width: 1440px;
+    width: 58%;
     height: 620px;
 
 }
@@ -172,7 +174,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 82%;
+    width: 61%;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -210,13 +213,15 @@
     width: 70%;
 }
 .box-example{
+    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: auto;
+    max-width: 1440px;
     margin-top: 70px;
     margin-right: auto;
-    width: 81%;
+    width: 61%;
 }
 .box-img{
     
@@ -245,10 +250,11 @@
 }
 .products{
     height: 645px;
+    max-width: 1440px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 81%;
+    width: 61%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -314,8 +320,9 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 81%;
+    width: 61%;
     margin-left: auto;
+    max-width: 1440px;
     margin-right: auto;
     align-items: center;
 }
@@ -338,7 +345,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 77%;
+    max-width: 1440px;
+    width: 58%;
     margin-left: auto;
     margin-right: auto;
 
@@ -390,7 +398,8 @@ color: white;
 .footer-space{
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 59%;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
@@ -435,8 +444,83 @@ h6{
     margin: 0px 3px;
 }
 
+@media screen and (min-width: 1180px){
+    .header{width: 1110px;}
+    .banner{width: 1110px;}
+    .cards{width: 1110px;}
+    .box-example{width: 1110px;}
+    .products{width: 1110px;}
+    .logos{width: 1110px;}
+    .sale{width: 1110px;}
+    .footer-space{width: 1110px;}
+}
+@media screen and (max-width: 1179px){
+    .header{width: 95%;}
+    .banner{width: 95%;}
+    .cards{width: 95%;}
+    .box-example{width: 95%;}
+    .products{width: 95%;}
+    .logos{width: 95%;}
+    .sale{width: 95%;}
+    .footer-space{width: 95%;}
+}
+@media screen and (max-width: 800px){
+    .banner-img{
+        display: none;
+    }
+    .box-img{
+        width: 100%;
+        margin-top: 28px;
+    }
+    .box-text{
+        margin-top: 8px;
+        width: 100%;
+    }
+    .box-text__h{
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .box-text__d{
+        width: 105%;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 11px;
+    }
+    
+    .box-example{
+        display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-right: auto;
+    width: 90%;
+    }
 
-@media screen and (min-width: 321px){
+}
+@media screen and (max-width: 1106px){
+    .examples{
+        height: 1284px;
+    }
+    .box-example{
+        flex-wrap: nowrap;
+    }
+    .box-img{
+        width: 100%;
+    }
+    .products{
+        height: 1066px;
+    }
+    .sale-img{
+        width: 62%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 649px){
     .sale-img2{
         display: none;
     }
@@ -450,7 +534,18 @@ h6{
         display: none;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 925px){
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-buttons{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 648px){
     .cards{
         display: flex;
     justify-content: space-evenly;
@@ -493,6 +588,7 @@ h6{
         display: none;
     }
     .sale-img{
+        width: auto;
         display: flex;
     align-items: flex-end;
     margin-top: 60px;
@@ -523,7 +619,8 @@ h6{
         margin-top: -8px;
     }
     .logos{
-        height: 600px;
+    height: 333px;
+
     }
     .product-d{
         margin-top: 6px;
@@ -546,7 +643,7 @@ h6{
         color: #666666;
     }
     .products{
-        height: 1895px;
+        height: 953px;
         margin-top: 3px;
         margin-bottom: 50px;
     }
@@ -632,7 +729,7 @@ h6{
     }
     .logo{
         margin-bottom: 17px;
-    width: 320px;
+        width: 100%;
     display: flex;
     justify-content: center;
     height: 41px;
@@ -659,8 +756,25 @@ h6{
         display: none;
     }
 }
-@media screen and (max-width: 920px){
+/* @media screen and (max-width: 920px){
     .logo{
         width: 453px;
+    }
+} */
+@media screen and (max-width: 536px){
+    .sale{
+        height: 574px;
+    }
+    .logos{
+        height: 600px;
+    }
+    .products{
+        height: 1895px;
+    }
+    .examples{
+        height: 1181px;;
+    }
+    .banner{
+        height: 328px;
     }
 }
